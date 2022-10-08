@@ -4,7 +4,7 @@
     font-family: 'popping', sans-serif;
 }
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5), #009688), url(../image/4.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), #009688), url(../image/pexels-valeria-boltneva-696287.jpg);
     
     background-size: cover;
     background-position: center;
@@ -287,13 +287,63 @@ hr{
 
 }
 
+/* --- testimonial --- */
 
 
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+  
+}
+
+.testimonial-row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.testimonial-col{
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 3px #00968814;
+  cursor: pointer;
+  transition: transform .7s;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px; 
+    margin-right: 20px;
+    border-radius: 3px;
+
+}
 
 
+.user-info .fa{
+    margin-left: 10px;
+    color: #27c0ff;
+    font-size: 20px ;
+}
+.user-info small{
+    color: #009688;
+}
+.testimonial-col:hover{
+    transform: translateY(7px);
+}
 
-
-
-
-
-
+@media  screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
